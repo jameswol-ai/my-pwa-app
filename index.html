@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My PWA App</title>
+
+  <!-- Mobile settings -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- PWA manifest -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Theme color -->
+  <meta name="theme-color" content="#0d6efd">
+</head>
+
+<body>
+  <h1>My App</h1>
+  <p>This is a home-screen app built with GitHub Pages.</p>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js');
+    }
+  </script>
+</body>
+</html>
